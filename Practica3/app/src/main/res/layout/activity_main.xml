@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- CheckBoxes -->
+        <CheckBox
+            android:id="@+id/cbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción A" />
+
+        <CheckBox
+            android:id="@+id/cbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción B" />
+
+        <CheckBox
+            android:id="@+id/cbOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción C" />
+
+        <!-- RadioGroup con RadioButtons -->
+        <RadioGroup
+            android:id="@+id/rgOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbChoice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elección 1" />
+
+            <RadioButton
+                android:id="@+id/rbChoice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elección 2" />
+
+            <RadioButton
+                android:id="@+id/rbChoice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elección 3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procesar selección"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
